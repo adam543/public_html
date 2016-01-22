@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=380">
+        <title>Reflex Game</title>
+        <link href="style/headers.css" rel="stylesheet" type="text/css" />
+        <link href="style/app.css" rel="stylesheet" type="text/css"/>
+        <link href="style/layout.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" defer src="js/app.js"></script>
+        <style>
+            #tabla  {
+                        width: 70%; /*szélesség*/
+                        height: 100%;
+                        margin-left: 15%; /*hogy jobban nézzünk ki, ne a lap szélén legyen*/
+                        margin-right: 15%;
+                        text-align: center; /*a táblázatban szereplő minden szöveg igazítása, kivéve a thead-et*/
+                    }
+            thead   {
+                        background-color: black; /*fejléc beállításai*/
+                        color: white;
+                        text-indent: 15px;
+                        text-align: center;
+                    }
+            tbody tr:nth-child(odd) { /*páratlan sorok*/
+                        background-color: rgba(    100,100,100, 0.4); /* kék, 20% alpha */
+                                    }
+            tbody tr:nth-child(even) { /*páros sorok*/
+                        background-color: rgba(0, 0, 0, 0.4); /* red, 40% alpha */
+                                     }
+</style>
+    </head>
+    <body>
+        <div>
+            <section class="gaia-list fit scroll sticky">
+            <section id="main_page" role="region">
+                <header>
+                    <h1>Reflex Game</h1>
+                </header>         
+                    <table id="tabla">
+                    <tbody>
+                        <tr>
+                            <td colspan="2">Highscores</td> 
+                        </tr>
+                        <tr>
+                            <td> 1 </td>
+                            <td id="1"> 100000000 </td>
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td id="2"> 10000000 </td>
+                        </tr>
+                        <tr>
+                            <td> 3 </td>
+                            <td id="3"> 1000000 </td>
+                        </tr>
+                        <tr>
+                            <td> 4 </td>
+                            <td id="4"> 100000 </td>
+                        </tr>
+                        <tr>
+                            <td> 5 </td>
+                            <td id="5"> 10000 </td>
+                        </tr>
+                        <tr>
+                            <td> 6 </td>
+                            <td id="6"> 1000 </td>
+                        </tr>
+                        <tr>
+                            <td> 7 </td>
+                            <td id="7"> 100 </td>
+                        </tr>
+                        <tr>
+                            <td> 8 </td>
+                            <td id="8"> 10 </td>
+                        </tr>
+                        <tr>
+                            <td> 9 </td>
+                            <td id="9"> 1 </td>
+                        </tr>
+                        <tr>
+                            <td> 10 </td>
+                            <td id="10"> 0 </td>
+                        </tr>
+                    </tbody>    
+                </table>
+                </section>      
+            </section>>
+        </div>
+    </body>
+</html>
